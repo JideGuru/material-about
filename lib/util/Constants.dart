@@ -9,8 +9,8 @@ class Constants{
   static final String instagramLink = "http://instagram.com/";
   static final String googlePlusLink = "https://plus.google.com/";
   static final String youtubeLink = "https://www.youtube.com/user/";
-  static final String dribbleLink = "http://play.google.com";
-  static final String linkedinLink = "http://play.google.com";
+  static final String dribbleLink = "https://dribbble.com/users/";
+  static final String linkedinLink = "https://www.linkedin.com/in/";
   static final String emailLink = "mailto:";
   static final String whatsappLink = "https://api.whatsapp.com/send?phone=";
   static final String skypeLink = "skype:";

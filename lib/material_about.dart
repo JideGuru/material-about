@@ -40,6 +40,7 @@ class MaterialAbout extends StatefulWidget {
   final String changelog;
   final String help;
   final String share;
+  final String devID;
 
 
   MaterialAbout({
@@ -76,6 +77,7 @@ class MaterialAbout extends StatefulWidget {
     @required this.changelog,
     @required this.help,
     @required this.share,
+    @required this.devID,
   }) : super(key: key);
 
 
@@ -409,7 +411,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               AppButton(
                 text: "More Apps from me",
                 img: '${Images.playStore}',
-                link: "${Constants.psLink}${widget.playstoreID}",
+                link: "${Constants.psLink}${widget.devID}",
                 iconColor: widget.iconColor,
                 textColor: widget.textColor,
               ),
@@ -420,6 +422,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                 link: "share",
                 iconColor: widget.iconColor,
                 textColor: widget.textColor,
+                share: widget.share
               ),
 
               AppButton(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:share/share.dart';
 
 class AppButton extends StatelessWidget {
 
@@ -8,8 +9,9 @@ class AppButton extends StatelessWidget {
   final String link;
   var textColor;
   var iconColor;
+  final String share;
 
-  AppButton({Key key, this.text, this.img, this.link, this.textColor, this.iconColor}): super(key:key);
+  AppButton({Key key, this.text, this.img, this.link, this.textColor, this.iconColor, this.share}): super(key:key);
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +56,11 @@ class AppButton extends StatelessWidget {
         ),
 
         onTap: (){
-          _launchURL("$link");
+          if(link == "share"){
+            Share.share(share);
+          }else {
+            _launchURL("$link");
+          }
         },
       ),
     );

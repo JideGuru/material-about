@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:material_about/material_about.dart';
+import 'package:material_about_example/ui/home.dart';
 import 'package:material_about_example/ui/light.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "$title",
       debugShowCheckedModeBanner: false,
-      home: Light(),
+      home: Home(),
 
       theme: ThemeData(
         primarySwatch: Colors.green,

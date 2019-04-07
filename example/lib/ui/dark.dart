@@ -1,15 +1,17 @@
 import 'package:material_about/material_about.dart';
 import 'package:flutter/material.dart';
 
-class Light extends StatefulWidget {
+
+class Dark extends StatefulWidget {
   @override
-  _LightState createState() => _LightState();
+  _DarkState createState() => _DarkState();
 }
 
-class _LightState extends State<Light> {
+class _DarkState extends State<Dark> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black54,
       body: MaterialAbout(
         banner: "images/profile_cover.jpg",
         dp: "images/profile_picture.png",
@@ -17,8 +19,8 @@ class _LightState extends State<Light> {
         position: "Mobile Developer",
         description: "I'm warmed of mobile technologies. \n Ideas Maker, curious and nature lover",
         seperatorColor: Colors.grey,
-        iconColor: Colors.black,
-        textColor: Colors.black,
+        iconColor: Colors.white,
+        textColor: Colors.white,
         playstoreID: "1111111111111",
         github: "YourID", //e.g JideGuru
         bitbucket: "YourID",
