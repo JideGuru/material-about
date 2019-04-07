@@ -3,7 +3,7 @@ import 'package:material_about/widgets/app_button.dart';
 import 'package:material_about/widgets/seperator.dart';
 import 'package:material_about/widgets/social_button.dart';
 import 'package:material_about/util/images.dart';
-import 'package:material_about/util/Constants.dart';
+import 'package:material_about/util/constants.dart';
 import 'dart:ui';
 
 
