@@ -11,34 +11,53 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          RaisedButton(
-            child: Text("Light"),
-            onPressed: () {
-              var router = new MaterialPageRoute(
-                  builder: (BuildContext context){
-                    return Light();
-                  }
-              );
 
-              Navigator.of(context).push(router);
-            },
+      appBar: AppBar(
+        title: Text(
+          "Material About Example"
+        ),
+      ),
+      body: Container(
+        alignment: Alignment.center,
+        child: Align(
+          alignment: Alignment.center,
+          child: ListView(
+            children: <Widget>[
+              RaisedButton(
+                color: Colors.white,
+                child: Text("Light"),
+                onPressed: () {
+                  var router = new MaterialPageRoute(
+                      builder: (BuildContext context){
+                        return Light();
+                      }
+                  );
+
+                  Navigator.of(context).push(router);
+                },
+              ),
+
+              RaisedButton(
+                color: Colors.black,
+                child: Text(
+                  "Dark",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                onPressed: () {
+                  var router = new MaterialPageRoute(
+                      builder: (BuildContext context){
+                        return Dark();
+                      }
+                  );
+
+                  Navigator.of(context).push(router);
+                },
+              )
+            ],
           ),
-
-          RaisedButton(
-            child: Text("Dark"),
-            onPressed: () {
-              var router = new MaterialPageRoute(
-                  builder: (BuildContext context){
-                    return Dark();
-                  }
-              );
-
-              Navigator.of(context).push(router);
-            },
-          )
-        ],
+        ),
       ),
     );
   }

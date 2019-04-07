@@ -40,6 +40,7 @@ class AppButton extends StatelessWidget {
                 '$img',
                 height: 30.0,
                 width: 30.0,
+                color: iconColor,
               ),
             ),
 
@@ -49,6 +50,7 @@ class AppButton extends StatelessWidget {
                 "$text",
                 style: TextStyle(
                   fontSize: 12.0,
+                  color: textColor,
                 ),
               ),
             ),

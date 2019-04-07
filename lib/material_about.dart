@@ -127,6 +127,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
+              color: widget.textColor
             ),
           ),
         ),
@@ -138,7 +139,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
             "${widget.position}",
             style: TextStyle(
               fontSize: 15.0,
-//                              fontWeight: FontWeight.bold,
+                color: widget.textColor
             ),
           ),
         ),
@@ -150,6 +151,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
             "${widget.description}",
             style: TextStyle(
               fontSize: 15.0,
+              color: widget.textColor,
             ),
             textAlign: TextAlign.center,
           ),
@@ -360,8 +362,9 @@ class _MaterialAboutState extends State<MaterialAbout> {
                       child: Text(
                         "${widget.appName}",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17.0
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17.0,
+                          color: widget.textColor,
                         ),
                       ),
                     ),
@@ -370,7 +373,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                       child: Text(
                         "Version ${widget.appVersion}",
                         style: TextStyle(
-//                              fontWeight: FontWeight.bold
+                          color: widget.textColor,
                         ),
                       ),
                     ),

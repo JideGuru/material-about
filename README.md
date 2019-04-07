@@ -1,4 +1,4 @@
-# ✨Flutter ‍Material About [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Build Status](https://travis-ci.com/JideGuru/material-about.svg?branch=master)](https://travis-ci.com/JideGuru/material-about)
+# ✨Flutter ‍Material About [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Build Status](https://travis-ci.com/JideGuru/material-about.svg?branch=master)](https://travis-ci.com/JideGuru/material-about) [![pub package](https://img.shields.io/pub/v/material_about.svg)](https://pub.dartlang.org/packages/material_about)
 This is an [Flutter](http://www.flutter.io) project. You, as a mobile developer, can use this library to show a material about screen in your apps. It was built to make your life easier when introducing you to your users, and also, to create an about screen pattern for material android apps. It's really simple and dynamic, check it out.
 
 Highly inspired by this [Android Library](https://github.com/jrvansuita/MaterialAbout)
@@ -22,7 +22,7 @@ Highly inspired by this [Android Library](https://github.com/jrvansuita/Material
 ## 🎖 Setup
 ```
 dependencies:
-  material_about: "^0.1.0"
+  material_about: latest_version
 ```
 
 ## 🎮 Implementation
@@ -36,7 +36,41 @@ import 'package:material_about/material_about.dart';
 2. Use the widget anywhere
 
 ```
-MaterialAbout()
+MaterialAbout(
+    banner: "images/profile_cover.jpg",
+    dp: "images/profile_picture.png",
+name: "Your Name",
+position: "Mobile Developer",
+description: "I'm warmed of mobile technologies. \n Ideas Maker, curious and nature lover",
+seperatorColor: Colors.grey,
+iconColor: Colors.black,
+textColor: Colors.black,
+playstoreID: "1111111111111",
+github: "YourID", //e.g JideGuru
+bitbucket: "YourID",
+facebook: "YourID", //e.g festus.olusegun.94
+twitter: "YourID", //e.g JideGuru
+instagram: "yourID", //e.g jideguru
+googlePlus: "yourID",
+youtube: "yourID",
+dribble: "yourID",
+linkedin: "yourID",
+email: "yourEmail",
+whatsapp: "yournumber", //without international code e.g 22994684468.
+skype: "yourID",
+google: "yourSearchQuery",
+android: "yourID",
+website: "yourURL",
+appIcon: "images/profile_picture.png",
+appName: "App Name",
+appVersion: "1.0",
+removeAds: "Link to pro app",
+donate: "Link to any wallet for donations",
+changelog: "Link to changeLog",
+help: "Link to about app", //to be improved soon
+share: "Text to share to people",
+devID: "YourPlaystoreDevID",
+)
 ```
 
 ## 📱Sample app
