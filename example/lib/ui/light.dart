@@ -22,7 +22,7 @@ class _LightState extends State<Light> {
         playstoreID: "1111111111111",
         github: "YourID", //e.g JideGuru
         bitbucket: "YourID",
-        facebook: "YourID", //e.g festus.olusegun.94
+        facebook: "YourID", //e.g jideguru
         twitter: "YourID", //e.g JideGuru
         instagram: "yourID", //e.g jideguru
         googlePlus: "yourID",

@@ -53,28 +53,28 @@ class MaterialAbout extends StatefulWidget {
     @required this.seperatorColor,
     @required this.iconColor,
     @required this.textColor,
-    @required this.playstoreID,
-    @required this.github,
-    @required this.bitbucket,
-    @required this.facebook,
-    @required this.twitter,
-    @required this.instagram,
-    @required this.googlePlus,
-    @required this.youtube,
-    @required this.dribble,
-    @required this.linkedin,
-    @required this.email,
-    @required this.whatsapp,
-    @required this.skype,
-    @required this.google,
-    @required this.android,
-    @required this.website,
+    this.playstoreID,
+    this.github,
+    this.bitbucket,
+    this.facebook,
+    this.twitter,
+    this.instagram,
+    this.googlePlus,
+    this.youtube,
+    this.dribble,
+    this.linkedin,
+    this.email,
+    this.whatsapp,
+    this.skype,
+    this.google,
+    this.android,
+    this.website,
     @required this.appIcon,
     @required this.appName,
     @required this.appVersion,
-    @required this.removeAds,
-    @required this.donate,
-    @required this.changelog,
+    this.removeAds,
+    this.donate,
+    this.changelog,
     @required this.help,
     @required this.share,
     @required this.devID,
@@ -86,6 +86,7 @@ class MaterialAbout extends StatefulWidget {
 }
 
 class _MaterialAboutState extends State<MaterialAbout> {
+  bool notNull(Object o) => o != null;
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -177,7 +178,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
             children: <Widget>[
 
               //PlayStore
-              SocialButton(
+              widget.playstoreID == null ? null : SocialButton(
                 img: '${Images.playStore}',
                 name: "Play Store",
                 link: "${Constants.psLink}${widget.playstoreID}",
@@ -186,7 +187,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Github
-              SocialButton(
+              widget.github == null ? null : SocialButton(
                 img: '${Images.github}',
                 name: "Github",
                 link: "${Constants.githubLink}${widget.github}",
@@ -195,7 +196,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Bitbucket
-              SocialButton(
+              widget.bitbucket == null ? null : SocialButton(
                 img: '${Images.bitBucket}',
                 name: "Bitbucket",
                 link: "${Constants.bitbucketLink}${widget.bitbucket}",
@@ -204,7 +205,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Facebook
-              SocialButton(
+              widget.facebook == null ? null : SocialButton(
                 img: '${Images.facebook}',
                 name: "Facebook",
                 link: "${Constants.facebookLink}${widget.facebook}",
@@ -213,7 +214,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Twitter
-              SocialButton(
+              widget.twitter == null ? null : SocialButton(
                 img: '${Images.twitter}',
                 name: "Twitter",
                 link: "${Constants.twitterLink}${widget.twitter}",
@@ -222,7 +223,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Instagram
-              SocialButton(
+              widget.instagram == null ? null : SocialButton(
                 img: '${Images.instagram}',
                 name: "Instagram",
                 link: "${Constants.instagramLink}${widget.instagram}",
@@ -231,7 +232,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Google Plus
-              SocialButton(
+              widget.googlePlus == null ? null : SocialButton(
                 img: '${Images.googlePlus}',
                 name: "Google Plus",
                 link: "${Constants.googlePlusLink}${widget.googlePlus}",
@@ -240,7 +241,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Youtube
-              SocialButton(
+              widget.youtube == null ? null : SocialButton(
                 img: '${Images.youtube}',
                 name: "Youtube",
                 link: "${Constants.youtubeLink}${widget.youtube}",
@@ -249,7 +250,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Dribble
-              SocialButton(
+              widget.dribble == null ? null : SocialButton(
                 img: '${Images.dribbble}',
                 name: "Dribble",
                 link: "${Constants.dribbleLink}${widget.dribble}",
@@ -258,7 +259,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Linkedin
-              SocialButton(
+              widget.linkedin == null ? null : SocialButton(
                 img: '${Images.linkedin}',
                 name: "LinkedIn",
                 link: "${Constants.linkedinLink}${widget.linkedin}",
@@ -267,7 +268,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Email
-              SocialButton(
+              widget.email == null ? null : SocialButton(
                 img: '${Images.email}',
                 name: "Email",
                 link: "${Constants.emailLink}${widget.email}",
@@ -276,7 +277,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //WhatsApp
-              SocialButton(
+              widget.whatsapp == null ? null : SocialButton(
                 img: '${Images.whatsapp}',
                 name: "WhatsApp",
                 link: "${Constants.whatsappLink}${widget.whatsapp}",
@@ -285,7 +286,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Skype
-              SocialButton(
+              widget.skype == null ? null : SocialButton(
                 img: '${Images.skype}',
                 name: "Skype",
                 link: "${Constants.skypeLink}${widget.skype}",
@@ -294,7 +295,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Google
-              SocialButton(
+              widget.google == null ? null : SocialButton(
                 img: '${Images.google}',
                 name: "Google",
                 link: "${Constants.googleLink}${widget.google}",
@@ -303,7 +304,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Android
-              SocialButton(
+              widget.android == null ? null : SocialButton(
                 img: '${Images.android}',
                 name: "Android",
                 link: "${Constants.androidLink}${widget.android}",
@@ -312,7 +313,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
               //Website
-              SocialButton(
+              widget.website == null ? null : SocialButton(
                 img: '${Images.website}',
                 name: "Website",
                 link: "${widget.website}",
@@ -320,7 +321,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                 textColor: widget.textColor,
               ),
 
-            ],
+            ].where(notNull).toList(),
           ),
         ),
 
