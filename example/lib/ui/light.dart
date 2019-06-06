@@ -38,9 +38,9 @@ class _LightState extends State<Light> {
         appIcon: "images/profile_picture.png",
         appName: "App Name",
         appVersion: "1.0",
-        removeAds: "Link to pro app",
+//        removeAds: "Link to pro app",
         donate: "Link to any wallet for donations",
-        changelog: "Link to changeLog",
+//        changelog: "Link to changeLog",
         help: "Link to about app", //to be improved soon
         share: "Text to share to people",
         devID: "YourPlaystoreDevID",

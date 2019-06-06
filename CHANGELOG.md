@@ -1,3 +1,11 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial release.
+
+## 0.1.0
+
+* Few bug fixes.
+
+## 0.2.0
+
+* Made some buttons optional.

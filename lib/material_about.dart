@@ -486,7 +486,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
               ),
 
 
-            ],
+            ].where(notNull).toList(),
           ),
         ),
       ],
