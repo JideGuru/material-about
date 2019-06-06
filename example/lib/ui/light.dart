@@ -11,8 +11,17 @@ class _LightState extends State<Light> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: MaterialAbout(
-        banner: "images/profile_cover.jpg",
-        dp: "images/profile_picture.png",
+        banner: Image.asset(
+          'images/profile_cover.jpg',
+          height: 120.0,
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.fill,
+        ),
+        dp: Image.asset(
+          "profile_picture.png",
+          height: 190.0,
+          fit: BoxFit.fill,
+        ),
         name: "Your Name",
         position: "Mobile Developer",
         description: "I'm warmed of mobile technologies. \n Ideas Maker, curious and nature lover",

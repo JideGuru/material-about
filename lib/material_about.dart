@@ -8,8 +8,8 @@ import 'dart:ui';
 
 
 class MaterialAbout extends StatefulWidget {
-  final String banner;
-  final String dp;
+  final Widget banner;
+  final Widget dp;
   final String name;
   final String position;
   final String description;
@@ -95,12 +95,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
         Container(
             child: Column(
               children: <Widget>[
-                Image.asset(
-                  '${widget.banner}',
-                  height: 120.0,
-                  width: MediaQuery.of(context).size.width,
-                  fit: BoxFit.fill,
-                ),
+
               ],
             )
         ),
@@ -111,11 +106,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
             backgroundColor: Colors.white,
             radius: 50.0,
             child: ClipOval(
-              child: Image.asset(
-                '${widget.dp}',
-                height: 190.0,
-                fit: BoxFit.fill,
-              ),
+              child: widget.dp
             ),
           ),
         ),

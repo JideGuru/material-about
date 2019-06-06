@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0ec90183-d74f-4025-9bea-5b41801fbeb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/example/lib/ui/light.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/ui/light.dart" afterDir="false" />
