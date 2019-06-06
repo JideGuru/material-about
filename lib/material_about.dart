@@ -95,7 +95,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
         Container(
             child: Column(
               children: <Widget>[
-
+                widget.banner
               ],
             )
         ),

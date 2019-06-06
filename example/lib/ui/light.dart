@@ -18,7 +18,7 @@ class _LightState extends State<Light> {
           fit: BoxFit.fill,
         ),
         dp: Image.asset(
-          "profile_picture.png",
+          "images/profile_picture.png",
           height: 190.0,
           fit: BoxFit.fill,
         ),
@@ -56,4 +56,5 @@ class _LightState extends State<Light> {
       ),
     );
   }
+
 }

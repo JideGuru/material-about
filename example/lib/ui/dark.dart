@@ -20,7 +20,7 @@ class _DarkState extends State<Dark> {
           fit: BoxFit.fill,
         ),
         dp: Image.asset(
-          "profile_picture.png",
+          "images/profile_picture.png",
           height: 190.0,
           fit: BoxFit.fill,
         ),
