@@ -20,12 +20,12 @@ class _LightState extends State<Light> {
         iconColor: Colors.black,
         textColor: Colors.black,
         playstoreID: "1111111111111",
-        github: "YourID", //e.g JideGuru
-        bitbucket: "YourID",
-        facebook: "YourID", //e.g festus.olusegun.94
-        twitter: "YourID", //e.g JideGuru
-        instagram: "yourID", //e.g jideguru
-        googlePlus: "yourID",
+//        github: "YourID", //e.g JideGuru
+//        bitbucket: "YourID",
+//        facebook: "YourID", //e.g jideguru
+//        twitter: "YourID", //e.g JideGuru
+//        instagram: "yourID", //e.g jideguru
+//        googlePlus: "yourID",
         youtube: "yourID",
         dribble: "yourID",
         linkedin: "yourID",
