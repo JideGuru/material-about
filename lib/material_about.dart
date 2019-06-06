@@ -461,7 +461,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                 textColor: widget.textColor,
               ),
 
-              AppButton(
+              widget.changelog == null ? null :AppButton(
                 text: "Changelog",
                 img: '${Images.changeLog}',
                 link: "${widget.changelog}",
@@ -469,7 +469,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                 textColor: widget.textColor,
               ),
 
-              AppButton(
+              widget.removeAds == null ? null :AppButton(
                 text: "Remove ads",
                 img: '${Images.removeAds}',
                 link: "${widget.removeAds}",
@@ -477,7 +477,7 @@ class _MaterialAboutState extends State<MaterialAbout> {
                 textColor: widget.textColor,
               ),
 
-              AppButton(
+              widget.donate == null ? null : AppButton(
                 text: "Donate",
                 img: '${Images.donate}',
                 link: "${widget.donate}",
