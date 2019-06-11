@@ -33,14 +33,14 @@ dependencies:
 ## 🎮 Implementation
 
 1. Import it
-```
+```dart
 import 'package:material_about/material_about.dart';
 ```
 
 
 2. Use the widget anywhere
 
-```
+```dart
 MaterialAbout(
   banner: Image.asset(
     'images/profile_cover.jpg',
